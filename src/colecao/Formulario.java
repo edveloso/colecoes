@@ -10,19 +10,18 @@ public class Formulario {
 		jogador.add("zico");
 		jogador.add("didi");
 		jogador.add("garrincha");
-		jogador.remove(2);
-		
-		Vector<Integer> megasena = new Vector<Integer>();
-		megasena.add(25);
-		megasena.add(42);
-		megasena.add(60);
-		megasena.add(7);
-		megasena.add(59);
-		megasena.add(3);
-		
-		for (Integer numero : megasena) {
-			System.out.print(" megasena: " + numero + " ");
+		jogador.add("didi");
+		//indexof retorna a posicao do elemento
+		System.out.println(jogador.indexOf("didi"));
+		//size tamanho do vetor
+		System.out.println(jogador.size());
+		System.out.println("=================");
+		for (String elem : jogador) {
+			System.out.print(elem + " ");
 		}
+		
+		
+		
 		
 		
 				
