@@ -1,4 +1,6 @@
 package colecao;
+import interfaces.Juiz;
+
 import java.util.*;
 
 
