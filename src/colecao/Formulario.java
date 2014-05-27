@@ -7,7 +7,36 @@ public class Formulario {
 	public static void main(String[] args) {
 		
 		ArrayList<String> jogador = new ArrayList<String>();
-		jogador.add("zico");
+
+		ArrayList<Juiz> juizes = new ArrayList<Juiz>();
+		Juiz juiz = new Juiz();
+		juiz.setNome("severino");
+		juizes.add(juiz);
+		
+		/**
+		 *  Para criar uma variável, nova, preciso colocar o nome de
+		 *  uma variável precedida de seu tipo.
+		 *   ContaCorrente conta;
+		 *   
+		 *  Não posso chamar um método para um ponteiro, variável, ainda 
+		 *  não instanciada. Dá erro de ponteiro nulo.
+		 *   XXconta.getSaldo();
+		 *  
+		 *  Para criar um objeto na memória preciso chamar a palavra reservada
+		 *  new sucedida pelo construtor da classe. Depois atribuo à variável.
+		 *  conta = new ContaCorrente();
+		 *   
+		 */
+		juiz = new Juiz();
+		juiz.setNome("tião");
+		juizes.add(juiz);
+		
+		
+		
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Digite um jogador");
+		String nomeJogador = scan.nextLine();
+		jogador.add(nomeJogador); 
 		jogador.add("didi");
 		jogador.add("garrincha");
 		jogador.add("didi");
