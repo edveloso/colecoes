@@ -1,7 +1,14 @@
 package colecao;
 import interfaces.Juiz;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Scanner;
+import java.util.Set;
+import java.util.TreeSet;
+import java.util.Vector;
 
 
 public class Formulario {
@@ -99,7 +106,31 @@ public class Formulario {
 			System.out.println(alu.getNome() + " " + alu.getSobrenome());
 		}
 		
+		List<Advogado> advogados = new ArrayList<Advogado>();
+		advogados = new LinkedList<Advogado>();
+		advogados = new Vector<Advogado>();
+		Set<Advogado> advs =  new TreeSet<Advogado>();
+		
+		Collection<Advogado> col = new ArrayList<Advogado>();
+		col =  new LinkedList<Advogado>();
+		col = new TreeSet<Advogado>();
+		
+		
+		
+		
+		
+		
 		
 	}
 	
 }
+
+
+
+
+
+
+
+
+
+
